@@ -1,1 +1,95 @@
-[]
+[
+    {
+        "id": "b8517667fb36a270",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a47a7cf3d00c7348",
+        "type": "comment",
+        "z": "b8517667fb36a270",
+        "name": "",
+        "info": "YO ! ",
+        "x": 350,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "867b2f085d2ec069",
+        "type": "ui_time_scheduler",
+        "z": "b8517667fb36a270",
+        "name": "",
+        "startDay": 0,
+        "refresh": 60,
+        "devices": [
+            "Device 1"
+        ],
+        "singleOff": false,
+        "onlySendChange": false,
+        "customPayload": false,
+        "eventMode": false,
+        "eventOptions": [
+            {
+                "label": "On",
+                "event": "true"
+            },
+            {
+                "label": "Off",
+                "event": "false"
+            }
+        ],
+        "sendTopic": false,
+        "lat": "",
+        "lon": "",
+        "customContextStore": "",
+        "outputs": 2,
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "x": 350,
+        "y": 260,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "683a199b5ef8578f",
+        "type": "chronos-scheduler",
+        "z": "b8517667fb36a270",
+        "name": "",
+        "config": "",
+        "schedule": [
+            {
+                "trigger": {
+                    "type": "time",
+                    "value": "",
+                    "offset": 0,
+                    "random": false
+                },
+                "output": {
+                    "type": "msg",
+                    "property": {
+                        "name": "payload",
+                        "type": "str",
+                        "value": ""
+                    }
+                }
+            }
+        ],
+        "disabled": false,
+        "multiPort": false,
+        "nextEventPort": false,
+        "delayOnStart": true,
+        "onStartDelay": 0.1,
+        "outputs": 1,
+        "x": 340,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    }
+]
